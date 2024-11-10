@@ -25,7 +25,6 @@ export function prodFn(mode: string): boolean {
   return PROD_ENV === mode;
 }
 
-
 // ----------------------------------------------------------------
 
 /**
