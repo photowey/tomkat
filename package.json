@@ -13,10 +13,11 @@
   "scripts": {
     "dev": "vite",
     "serve": "vite",
-    "build:dev": "vue-tsc && vite build --mode dev",
+    "build:dev": "vue-tsc && vite build --mode development",
     "build:test": "vue-tsc && vite build --mode test",
     "build:stage": "vue-tsc && vite build --mode stage",
-    "build:prod": "vue-tsc && vite build --mode prod",
+    "build:prod": "vue-tsc && vite build --mode production",
+    "build": "vue-tsc && vite build --mode production",
     "preview": "vite preview",
     "tauri": "tauri"
   },

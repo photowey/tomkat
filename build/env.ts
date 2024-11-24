@@ -2,27 +2,27 @@ import path from "path";
 
 // ----------------------------------------------------------------
 
-const DEV_ENV = "dev";
-const TEST_ENV = "test";
-const STAGE_ENV = "stage";
-const PROD_ENV = "prod";
+const TAURI_APP_ENV_DEV = "development";
+const TAURI_APP_ENV_TEST = "test";
+const TAURI_APP_ENV_STAGE = "stage";
+const TAURI_APP_ENV_PROD = "production";
 
 // ----------------------------------------------------------------
 
-export function devFn(mode: string): boolean {
-  return DEV_ENV === mode;
+export function isDevFn(mode: string): boolean {
+  return TAURI_APP_ENV_DEV === mode;
 }
 
-export function testFn(mode: string): boolean {
-  return TEST_ENV === mode;
+export function isTestFn(mode: string): boolean {
+  return TAURI_APP_ENV_TEST === mode;
 }
 
-export function stageFn(mode: string): boolean {
-  return STAGE_ENV === mode;
+export function isStageFn(mode: string): boolean {
+  return TAURI_APP_ENV_STAGE === mode;
 }
 
-export function prodFn(mode: string): boolean {
-  return PROD_ENV === mode;
+export function isProdFn(mode: string): boolean {
+  return TAURI_APP_ENV_PROD === mode;
 }
 
 // ----------------------------------------------------------------
